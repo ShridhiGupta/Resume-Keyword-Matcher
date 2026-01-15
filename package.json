@@ -1,0 +1,16 @@
+{
+  "name": "resume-keyword-matcher",
+  "version": "1.0.0",
+  "description": "ATS-style web application for resume keyword matching",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["resume", "ats", "keyword-matching", "nextjs", "express"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
