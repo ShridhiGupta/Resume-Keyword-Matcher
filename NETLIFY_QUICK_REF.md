@@ -9,17 +9,16 @@ When deploying via Netlify UI, use these settings:
 | Field | Value |
 |-------|-------|
 | **Base directory** | `frontend` |
-| **Build command** | `NEXT_PUBLIC_NETLIFY=true npm run build` |
-| **Publish directory** | `frontend/out` |
+| **Build command** | `npm run build` |
+| **Publish directory** | *(Leave empty - Netlify plugin handles it)* |
+
+**Note:** The `netlify.toml` file automatically configures the `@netlify/plugin-nextjs` plugin.
 
 ### Environment Variables (Click "Add environment variables")
 
-Add these two variables:
+Add this variable:
 
-1. **Variable name**: `NEXT_PUBLIC_NETLIFY`  
-   **Value**: `true`
-
-2. **Variable name**: `NEXT_PUBLIC_API_URL`  
+1. **Variable name**: `NEXT_PUBLIC_API_URL`  
    **Value**: `https://your-backend-url.com`  
    *(Replace with your actual backend URL after deploying backend)*
 
@@ -32,12 +31,13 @@ Leave as default: `netlify/functions` (not needed for this app)
 
 1. **Connect Repository** ✅
 2. **Set Base directory**: `frontend`
-3. **Set Build command**: `NEXT_PUBLIC_NETLIFY=true npm run build`
-4. **Set Publish directory**: `frontend/out`
-5. **Add Environment Variables**:
-   - `NEXT_PUBLIC_NETLIFY=true`
+3. **Set Build command**: `npm run build`
+4. **Set Publish directory**: *(Leave empty)*
+5. **Add Environment Variable**:
    - `NEXT_PUBLIC_API_URL=https://your-backend-url.com`
 6. **Click "Deploy"** 🚀
+
+**Note:** The `@netlify/plugin-nextjs` plugin is automatically installed from `netlify.toml`
 
 ---
 

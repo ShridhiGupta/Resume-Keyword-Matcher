@@ -2,11 +2,14 @@
   # Base directory for the frontend
   base = "frontend"
   
-  # Build command for Next.js (with Netlify flag for static export)
-  command = "NEXT_PUBLIC_NETLIFY=true npm run build"
+  # Build command for Next.js
+  command = "npm run build"
   
-  # Publish directory (Next.js static export output)
-  publish = "frontend/out"
+  # Publish directory (handled by Netlify Next.js plugin automatically)
+
+# Netlify Next.js plugin (handles Next.js App Router and routing)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [build.environment]
   # Node version
@@ -14,14 +17,6 @@
   
   # Next.js build settings
   NEXT_TELEMETRY_DISABLED = "1"
-  # Enable static export for Netlify
-  NEXT_PUBLIC_NETLIFY = "true"
-
-# Redirect all routes to index.html for client-side routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 # Headers for security and performance
 [[headers]]
