@@ -4,7 +4,7 @@ A lightweight ATS-style full-stack web application that analyzes a candidate’s
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 1. User pastes resume text and job description
 2. Backend preprocesses both inputs:
@@ -20,7 +20,7 @@ A lightweight ATS-style full-stack web application that analyzes a candidate’s
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 - Paste resume and job description text
 - ATS-style keyword matching logic
@@ -32,7 +32,7 @@ A lightweight ATS-style full-stack web application that analyzes a candidate’s
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - Next.js (React)
@@ -55,7 +55,7 @@ A lightweight ATS-style full-stack web application that analyzes a candidate’s
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -64,7 +64,7 @@ A lightweight ATS-style full-stack web application that analyzes a candidate’s
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Option 1: Install all dependencies at once
 ```bash
